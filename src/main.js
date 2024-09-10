@@ -1,12 +1,11 @@
-const express = require("express")
-const app = express()
-const port = 5000
+const express = require("express");
+const app = express();
+const port = 5000;
 
-const pet_router = require("./routers/pet_router.js")
+const pet_router = require("./routers/pet_router.js");
 
-app.use(express.json())
+app.use(express.json());
 
-app.use("/pet", pet_router)
+app.use("/pet", pet_router);
 
-
-app.listen(port, () => console.log("Servidor escutando na porta 5000"))
+app.listen(port, () => console.log("Servidor escutando na porta 5000"));

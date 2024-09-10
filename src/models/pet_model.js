@@ -9,8 +9,8 @@ const petSchema = new Schema({
   },
   raca: {
     type: String,
-    required: false
-  }
+    required: false,
+  },
 });
 
 const Pet = db.model("Pet", petSchema);
